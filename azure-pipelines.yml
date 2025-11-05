@@ -10,7 +10,7 @@ variables:
 
   azureSubscription: "6e34f1e5-74ec-4094-815e-783b39dd1eb1"
 
-  containerRegistry: "motuswatchs4acr"
+  containerRegistry: "acrconnection"
   repositoryName: "javaapi"
 
   webAppName: "motuswatchs4webapp"
