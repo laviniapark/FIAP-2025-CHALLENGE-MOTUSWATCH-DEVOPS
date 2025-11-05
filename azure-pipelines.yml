@@ -99,13 +99,13 @@ stages:
               inlineScript: |
                 az container create -g $(resourceGroup) \
                   -n $(aciName) \
-                  --image $(containerRegistry).azurecr.io/$(repositoryName):latest \
+                  --image motuswatchs4acr.azurecr.io/$(repositoryName):latest \
                   --ports 8080 \
                   --cpu 1 \
                   --memory 2 \
                   --os-type Linux \
                   --ip-address Public \
-                  --registry-login-server $(containerRegistry).azurecr.io \
+                  --registry-login-server motuswatchs4acr.azurecr.io \
                   --registry-username $(ACR_USERNAME) \
                   --registry-password $(ACR_PASSWORD) \
                   --location $(location) \
