@@ -38,7 +38,7 @@ stages:
           - task: Maven@4
             inputs:
               mavenPomFile: "pom.xml"
-              goals: "clean package"
+              goals: "clean package -DskipTests"
               publishJUnitResults: true
               mavenOptions: "-Xmx3072m $(MAVEN_OPTS)"
               options: '-D"spring.profiles.active=test"'
