@@ -8,7 +8,7 @@ variables:
   MAVEN_CACHE_FOLDER: $(Pipeline.Workspace)/.m2/repository
   MAVEN_OPTS: "-Dmaven.repo.local=$(MAVEN_CACHE_FOLDER)"
 
-  azureSubscription: "6e34f1e5-74ec-4094-815e-783b39dd1eb1"
+  azureSubscription: "847885df-35e4-4685-b5a8-e5b39efeb0de"
 
   containerRegistry: "acrconnection"
   repositoryName: "javaapi"
