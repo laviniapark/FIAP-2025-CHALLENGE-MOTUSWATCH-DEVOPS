@@ -1,3 +1,4 @@
+# Etapa 1: Build
 FROM maven:3.9.11-eclipse-temurin-17-noble AS build
 
 WORKDIR /app
@@ -12,7 +13,7 @@ FROM eclipse-temurin:17-jre-jammy
 
 WORKDIR /app
 
-COPY --from=build /app/target/*.jar app.jar
+COPY --from=build /app/target/motuswatch-0.0.1-SNAPSHOT.jar app.jar
 
 ENV SPRING_PROFILES_ACTIVE=prod
 
